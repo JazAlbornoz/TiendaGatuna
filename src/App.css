@@ -2,37 +2,72 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
   font-size: calc(10px + 2vmin);
   color: white;
 }
+@media screen and (max-width: 1186px) {
+  .App-header {
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 25% 75%; } }
 
-.App-link {
-  color: #61dafb;
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+  grid-column: 1;
+  grid-row: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Title-App-header{
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  size: 20px;
+  columns: 2;
+  grid-row: 1;
+}
+
+.Items-App-header{
+  list-style-type: none;
+  color: whitesmoke;
+  font-size: 18px;
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  columns: 3;
+  grid-row: 1;
+  display: grid;
+}
+
+@media screen and (max-width: 1186px) {
+  .Items-App-header {
+    grid-template-columns: 33.3% 16.65% 16.65% 16.65% 16.65%;
+    grid-template-rows: 25% 75%; } }
+
+.comida{
+  grid-column: 2;
+}
+.ropa{
+  grid-column: 3;
+}
+.salud{
+  grid-column: 4;
+}
+.blog{
+  grid-column: 5;
+}
+
+.li-App-header{
+  display: inline-block;
+  margin: 10px;
+}
+
+.li-App-header:hover{
+  color: rgb(190, 190, 190);
+}
+.li-App-header:active{
+ color: blue;
 }
