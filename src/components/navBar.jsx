@@ -1,4 +1,5 @@
 import React from 'react'
+import CartWidget from './CartWidget';
 import logo from './nuevo_gato_negro_logo.webp';
 
 const NavBar = () => {
@@ -13,6 +14,7 @@ const NavBar = () => {
             <li className="li-App-header salud">Salud</li>
             <li className="li-App-header blog">Blog Gatuno</li>
         </ul>
+        <CartWidget/>
         </header>
         </div>
        
