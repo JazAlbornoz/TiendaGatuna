@@ -4,7 +4,7 @@ const PaginaProducto = () =>{
 
  const [count, setCount] = useState(0)
 
- const actualizarValores = () =>{
+ const sumarValores = () =>{
   setCount(count+1)
 }
 const restarValores = () =>{
@@ -12,12 +12,14 @@ const restarValores = () =>{
 }
 
     return(
-      <div>
-        <div className='onClick' onClick={() => actualizarValores()}>Haz click aquí</div>
-        <div className='contador'>{count}</div>
-        <div className='onClickDos' onClick={() => restarValores()}>Haz click aquí</div>
+      <>
+      <div className='divCantidad'>
+        <div className='onClickSumar' onClick={() => sumarValores()}>+</div>
+        <div className='cantidad'>Cantidad: {count}</div>
+        <div className='onClickRestar' onClick={() => restarValores()}>-</div>
       </div>
+      </>
     );
   }
 
-export default PaginaProducto                 
+export default PaginaProducto  
