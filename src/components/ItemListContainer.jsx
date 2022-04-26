@@ -1,7 +1,7 @@
 import React from 'react'
 import './ItemListContainer.css';
-//import Card from './Card.jsx';
 import ItemList from './paginas/ItemList'
+import ItemDetailContainer from './paginas/ItemDetailContainer'
 
 const ItemListContainer = () => {
     return (
@@ -14,8 +14,3 @@ const ItemListContainer = () => {
 }
 
 export default ItemListContainer
-
-/*
-            <div className='cardDos'><ItemList/></div>
-            <div className='cardTres'><Card/></div>
-            <div className='cardCuatro'><Card/></div> */

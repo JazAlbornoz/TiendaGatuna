@@ -34,7 +34,7 @@
 .App-cartIcon{
   columns: 4;
   grid-row: 1;
-  width: 30px;
+  width: 60px;
   margin-top: 30px;
   margin-right: -120px;
   background-color: white;
@@ -74,6 +74,7 @@
 }
 
 .li-App-header{
+  color: aliceblue;
   display: inline-block;
   margin: 10px;
 }
