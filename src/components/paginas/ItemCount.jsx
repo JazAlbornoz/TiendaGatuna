@@ -14,9 +14,9 @@ const restarValores = () =>{
     return(
       <>
       <div className='divCantidad'>
-        <div className='onClickSumar' onClick={() => sumarValores()}>+</div>
-        <div className='cantidad'>Cantidad: {count}</div>
         <div className='onClickRestar' onClick={() => restarValores()}>-</div>
+        <div className='cantidad'>Cantidad: {count}</div>
+        <div className='onClickSumar' onClick={() => sumarValores()}>+</div>
       </div>
       </>
     );

@@ -1,10 +1,26 @@
+import ItemCount from './ItemCount';
+import { producto } from './productos';
+import { Link } from 'react-router-dom';
 
- export const producto = ( 
-    [{ id: 1, nombre: 'corbata', imagen:'./imagenes/producto_corbataGato.jpg', precio: 150, descripcion: 'corbata para gato con cuello de camisa', link: './ItemListContainer.js', stock: 5 },
-     { id: 2, nombre: 'body', imagen:"./components/imagenes/producto_ropa_dos.jpg", precio: 350, descripcion: 'body para gato, varios colores', link: './ItemListContainer.js', stock: 3 },
-     { id: 3, nombre: 'Cat chow adulto', imagen:"./components/imagenes/producto_catchow_dos.jpg", precio: 500, descripcion: 'alimento balanceado para gato. Sabor carne y pollo', link: './ItemListContainer.js', stock: 10 },
-     { id: 4, nombre: 'Cat chow bebé', imagen:"./components/imagenes/producto_catchow_dos.jpg", precio: 450, descripcion: 'alimento balanceado para gato. Sabor pollo y pezcado', link: './ItemListContainer.js', stock: 7 },
-     { id: 5, nombre: 'Shampoo gato', imagen:"./components/imagenes/producto_catchow_dos.jpg", precio: 320, descripcion: 'shampoo para gato olor frutilla', link: './ItemListContainer.js', stock: 4 },
-     { id: 6, nombre: 'Cepillo de pelo', imagen:"./components/imagenes/producto_catchow_dos.jpg", precio: 200, descripcion: 'cepillo de pelo para gato color verde', link: './ItemListContainer.js', stock: 1 }
-    ]
-)
+
+const Item = () => {
+
+    return (
+            <div><div className='d-flex align-content-center flex-xl-wrap'>
+            {producto.map(item => <div className='cardBody'>
+              <h2 key={item.id} className="cardTitle">{item.nombre}</h2>
+              <img src={item.imagen}/>
+              <h3 className="cardPrecio">{item.precio}</h3>
+              <p className="cardDesc">{item.descripcion}</p>
+              <p>{item.categoria}</p>
+              <p className='cardStock'>Stock: {item.stock}</p>
+              <ItemCount/>
+              <Link className='verMasBotonCard' to= {item.id}>Ver más</Link>
+              </div>)}
+          
+       </div></div>
+           );
+}
+
+export default Item
+//{ producto.map( el => <div><Item key={el.id}/></div> )}

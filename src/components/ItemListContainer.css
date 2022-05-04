@@ -45,11 +45,9 @@
     color: rgb(20, 19, 19);
 }
 .cardDesc{
-    margin-top: -30px;
     text-align: center;
 }
 .cardPrecio{
-    margin-top: -15px;
     text-align: center;
     font-size: 50px;
     font-weight: 800;
@@ -64,4 +62,29 @@
     border-radius: 5px;
     color: #f7f6ff;
     background-color: #474080;
+}
+.divCantidad{
+    display:grid;
+    background-color: #e4e1fc;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+@media screen and (min-width: 1186px) {
+    .divCantidad {
+      grid-template-columns: 20% 60% 20%;
+       } }
+.onClickSumar{
+    background-color: #aa9fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.onClickRestar{
+    background-color: #aa9fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.cantidad{
+    color: #474080;
+    margin-top: 5px;
 }
