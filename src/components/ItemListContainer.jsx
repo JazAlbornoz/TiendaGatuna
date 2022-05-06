@@ -9,19 +9,20 @@ const ItemListContainer = () => {
 const [productos, setProductos] = useState([])
 const [loading, setLoading] = useState(false)
 
-const {categoria} = useParams()
+const {categoryId} = useParams()
 
-console.log(categoria)
+console.log(categoryId)
 
 useEffect(() =>{
     setLoading(true)
 
     pedirDatos()
       .then((res) => {
-          if(!categoria){
-          setProductos(res)
+          if(!categoryId){
+            setProductos(res)
         } else {
-          setProductos(res.filter((prod)=> prod.categoria === categoria))
+            setProductos(res.filter((prod) => prod.categoria === categoryId))
+            console.log(res.filter((prod) => prod.categoria === categoryId))
         }
       })
       .catch((err) => {
@@ -30,15 +31,13 @@ useEffect(() =>{
     .finally(() => {
         setLoading(false)
     })
-}, [])
+}, [categoryId])
 
     return (
         <>
-        <div className='cardContainer'>
-        </div>
         {
-                loading 
-                    ? <h2>Loading...</h2> 
+                loading
+                    ? <h2>Cargando...</h2> 
                     : <ItemList productos={productos}/>
             } 
         </>

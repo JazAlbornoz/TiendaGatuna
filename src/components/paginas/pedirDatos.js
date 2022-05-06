@@ -1,9 +1,9 @@
 import { producto } from "./productos"
 
 export const pedirDatos = () => {
-    return new Promise( (resolve, reject) => {
+    return new Promise( (res, rej) => {
         setTimeout(() => {
-            resolve(producto)
+            res(producto)
         }, 1000)
     })
 }

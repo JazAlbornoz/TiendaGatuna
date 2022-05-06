@@ -1,6 +1,6 @@
 
 .cardContainer{
-    display: grid;
+    display: flex;
 }
 .cardBody{
     margin-top: 10px;
@@ -11,25 +11,7 @@
     padding: 15px;
     background-color: #f7f6ff;
     box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.37);
-}
-/*@media screen and (min-width: 1186px) {
-    .cardContainer {
-      grid-template-columns: 25% 25% 25% 25%;
-       } }*/
-      
-.cardUno{
-    grid-column: 1;
-}
-
-.cardDos{
-    grid-column: 2;
-}
-.cardTres{
-    grid-column: 3;
-}
-.cardCuatro{
-    grid-column: 4;
-}
+} 
 .cardImg{
     box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.171);
     width: 75%;
@@ -62,7 +44,7 @@
     border-radius: 5px;
     color: #f7f6ff;
     background-color: #474080;
-}
+}/*
 .divCantidad{
     display:grid;
     background-color: #e4e1fc;
@@ -70,7 +52,7 @@
     text-align: center;
     margin-bottom: 15px;
 }
-@media screen and (min-width: 1186px) {
+@media screen and (max-width: 1886px) {
     .divCantidad {
       grid-template-columns: 20% 60% 20%;
        } }
@@ -87,4 +69,4 @@
 .cantidad{
     color: #474080;
     margin-top: 5px;
-}
+}*/

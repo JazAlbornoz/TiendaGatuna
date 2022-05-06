@@ -11,9 +11,9 @@ const NavBar = () => {
         <p className="Title-App-header">El Gato Negro</p>
         <nav className="Items-App-header">
             <Link className="li-App-header inicio" to="/">Inicio</Link>
-            <Link className="li-App-header comida" to="">Comida</Link>
-            <Link className="li-App-header ropa" to="">Ropa</Link>
-            <Link className="li-App-header salud" to="">Salud</Link>
+            <Link className="li-App-header comida" to="/comida">Comida</Link>
+            <Link className="li-App-header ropa" to="/ropa">Ropa</Link>
+            <Link className="li-App-header salud" to="/salud">Salud</Link>
         </nav>
         <CartWidget/>
         </header>
