@@ -3,7 +3,7 @@
     [
         { id: 1,
           categoria: 'ropa',
-          nombre: 'corbata',
+          nombre: 'Corbata',
           imagen:'./imagenes/producto_corbataGato.jpg',
           precio: 150,
           descripcion: 'corbata para gato con cuello de camisa',
@@ -11,8 +11,8 @@
         },
         { id: 2,
           categoria: 'ropa',
-          nombre: 'body',
-          imagen:"./components/imagenes/producto_ropa_dos.jpg",
+          nombre: 'Body para gato',
+          imagen:"./imagenes/producto_ropa_dos.jpg",
           precio: 350,
           descripcion: 'body para gato, varios colores',
           stock: 3 

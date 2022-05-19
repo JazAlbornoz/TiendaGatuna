@@ -1,6 +1,6 @@
 import React from 'react'
-import ImgProducto from './ImgProducto';
-import NomProducto from './NomProducto';
+import ImgProducto from '../ImgProducto';
+import NomProducto from '../NomProducto';
 //import ItemList from './paginas/ItemList';
 
 const Card = () => {

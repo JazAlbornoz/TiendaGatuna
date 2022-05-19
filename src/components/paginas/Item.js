@@ -9,10 +9,10 @@ const Item = () => {
             <div><div className='d-flex align-content-center flex-xl-wrap'>
             {producto.map(item => <div className='cardBody'>
               <h2 key={item.id} className="cardTitle">{item.nombre}</h2>
-              <img src={item.imagen}/>
+              <img src={item.imagen} alt={item.nombre}/>
               <h3 className="cardPrecio">{item.precio}</h3>
               <p className="cardDesc">{item.descripcion}</p>
-              <p>{item.categoria}</p>
+              <p>Categoria: {item.categoria}</p>
               <p className='cardStock'>Stock: {item.stock}</p>
               <ItemCount max={item.stock}/>
               <Link className='verMasBotonCard' to= {item.id}>Ver más</Link>
