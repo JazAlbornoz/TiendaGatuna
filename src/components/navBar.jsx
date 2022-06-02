@@ -1,6 +1,6 @@
 import React from 'react'
 import CartWidget from './CartWidget';
-import logo from './imagenes/nuevo_gato_negro_logo.webp';
+import logo from './nuevo_gato_negro_logo.webp';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
