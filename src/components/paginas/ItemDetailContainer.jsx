@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { ItemDetail } from './paginas/ItemDetail'
+import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom';
-import { pedirDatos } from './paginas/pedirDatos';
+import { pedirDatos } from './pedirDatos';
 
 const ItemDetailContainer = () => {
 
@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
         .finally(() => {
             setLoading(false)
         })
-    }, [])
+    }, [itemId])
 
 return (
     <>

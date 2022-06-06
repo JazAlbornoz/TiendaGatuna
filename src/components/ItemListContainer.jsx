@@ -29,7 +29,7 @@ useEffect(() =>{
     .finally(() => {
         setLoading(false)
     })
-}, [categoryId])
+}, [])
 
     return (
         <>
